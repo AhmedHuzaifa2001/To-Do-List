@@ -1,0 +1,109 @@
+/* Styling for the entire to-do list grid */
+.todolist-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #6a85b6;
+    background-image: linear-gradient(160deg, #6a85b6 0%, #bac8e0 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    margin: 50px auto;
+    color: #fff;
+}
+
+/* Heading styling */
+.todolist-grid h1 {
+    color: #f8f9fa;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Input and add button container */
+.todolist-grid div {
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Task input field */
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Add task button */
+button.addTask {
+    background-color: #ffbe76;
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.addTask:hover {
+    background-color: #ffa502;
+}
+
+/* Ordered list of tasks */
+ol {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+/* Individual task items */
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Task text */
+span.text {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #f8f9fa;
+}
+
+/* Delete, move-up, move-down buttons */
+button.delete, button.move-up, button.move-down {
+    background-color: #ff7979;
+    color: #fff;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.delete:hover {
+    background-color: #e55039;
+}
+
+button.move-up, button.move-down {
+    background-color: #f39c12;
+}
+
+button.move-up:hover, button.move-down:hover {
+    background-color: #e67e22;
+}
